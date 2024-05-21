@@ -1,18 +1,76 @@
-## Getting Started
+## Anatomia de Classes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Sintaxe de declaração de classe:
 
-## Folder Structure
+public class MinhaClasse {
+    
+    // SEU CÓDIGO AQUI
 
-The workspace contains two folders by default, where:
+}
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Declaração de método:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+public class MinhaClasse {
+    
+    // CORPO DA CLASSE
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    public static void main (String [] args) {
 
-## Dependency Management
+        // CORPO DO MÉTODO main
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    }
+
+}
+
+### Padrão de Nomenclatura
+
+camelcase
+PascalCase
+UPPERCASE
+
+### Onde usar:
+
+*camelCase* - para variáveis
+*PascalCase* - para nome de arquivo e classes se caso for palavra composta sempre a primeira letra começa sendo MAIÚSCULA.
+*UPPERCASE* - para variaveis que nunca serão mudadas, isso serve mais para o próprio programador entender o código.
+
+### Declaração de váriaveis
+Estrutura:
+Tipo NomeBemDefinido = Atyribuição (opcinal em alguns casos)
+
+### Indentação
+
+Uma maneira de entender o código com facilidade
+
+Exemplo:
+public class BoletimEstudantil {
+	public static void main(String[] args) {
+		int mediaFinal = 6;
+		if (mediaFinal < 6)
+			System.out.println("REPROVADO");
+		else if (mediaFinal == 6)
+			System.out.println("PROVA MINERVA");
+		else
+			System.out.println("APROVADO");
+	}
+}
+
+### Organização de arquivos
+
+*Nome Simples:* Nome do arquivo, exemplo ContaBanco.
+*Nome Qualificado:* Nome do pacote + nome do arquivo, exemplo: com.suaempresa.ContaBanco.
+
+## Java Beans
+
+escrever algoritmos legíveis a nível de ser compreendidos por qualquer programador e até mesmo você. Exemplos:
+
+*Não recomendado*
+double salMedio = 1500.23  //variável abreviada, o que dificulta a compreensão
+String emails = "aluno@escola.com" //confuso se a variável seria um array ou único e-mail
+String myName = "JOSEPH" //se idioma pt-BR, o valor poder ser de outro idioma mas o nome da variável não 
+
+*Recomendado*
+double salarioMedio=1500.23;
+String email ="aluno@escola.com";
+String [] emails = {"aluno@escola.com","professor@escola.com"}
+String meuNome = "JOSEPH"
