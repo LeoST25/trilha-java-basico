@@ -2,16 +2,18 @@
 
 ### Sintaxe de declaração de classe:
 
-```Java
+``` Java
 public class MinhaClasse {
     
     // SEU CÓDIGO AQUI
 
 }
-Declaração de método:
+```
 
+Declaração de método:
+``` Java
 public class MinhaClasse {
-    
+  
     // CORPO DA CLASSE
 
     public static void main (String [] args) {
@@ -21,25 +23,30 @@ public class MinhaClasse {
     }
 
 }
-Padrão de Nomenclatura
-camelCase
-PascalCase
-UPPERCASE
+```
+### Padrão de Nomenclatura
 
-Onde usar:
+camelCase \
+PascalCase \
+UPPERCASE 
 
-camelCase - para variáveis
-PascalCase - para nome de arquivo e classes; se caso for palavra composta, sempre a primeira letra começa sendo MAIÚSCULA.
-UPPERCASE - para variáveis que nunca serão mudadas; isso serve mais para o próprio programador entender o código.
-Declaração de variáveis
-Estrutura:
+### Onde usar
+
+**camelCase** - para variáveis\
+**PascalCase** - para nome de arquivo e classes; se caso for palavra composta, sempre a primeira letra de cada palavra começa sendo MAIÚSCULA.\
+**UPPERCASE** - para variáveis que nunca serão mudadas; isso serve mais para o próprio programador entender o código.
+
+### Declaração de variáveis
+
+**Estrutura:**\
 Tipo NomeBemDefinido = Atribuição (opcional em alguns casos)
 
-Indentação
+### Indentação
 Uma maneira de entender o código com facilidade
 
 Exemplo:
 
+``` Java
 public class BoletimEstudantil {
     public static void main(String[] args) {
         int mediaFinal = 6;
@@ -51,24 +58,24 @@ public class BoletimEstudantil {
             System.out.println("APROVADO");
     }
 }
-
-Organização de arquivos
+```
+### Organização de arquivos
 Nome Simples: Nome do arquivo, exemplo ContaBanco.
 Nome Qualificado: Nome do pacote + nome do arquivo, exemplo: com.suaempresa.ContaBanco.
 
-Java Beans
+### Java Beans
 Escrever algoritmos legíveis a nível de ser compreendidos por qualquer programador e até mesmo você. Exemplos:
 
-*Não recomendado*
-
+**Não recomendado**
+``` Java
 double salMedio = 1500.23;  // variável abreviada, o que dificulta a compreensão
 String emails = "aluno@escola.com"; // confuso se a variável seria um array ou único e-mail
 String myName = "JOSEPH"; // se idioma pt-BR, o valor poder ser de outro idioma mas o nome da variável não
-
-*Recomendado*
-
-
+```
+**Recomendado**
+``` Java
 double salarioMedio = 1500.23;
 String email = "aluno@escola.com";
 String[] emails = {"aluno@escola.com", "professor@escola.com"};
 String meuNome = "JOSEPH";
+```
