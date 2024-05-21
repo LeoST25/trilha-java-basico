@@ -2,8 +2,8 @@
 
 ### Sintaxe de declaração de classe:
 
-
-```public class MinhaClasse {
+```Java
+public class MinhaClasse {
     
     // SEU CÓDIGO AQUI
 
