@@ -30,7 +30,7 @@ UPPERCASE
 
 ### Onde usar:
 
-*camelCase* - para variáveis
+*camelCase* - para variáveis /n
 *PascalCase* - para nome de arquivo e classes se caso for palavra composta sempre a primeira letra começa sendo MAIÚSCULA.
 *UPPERCASE* - para variaveis que nunca serão mudadas, isso serve mais para o próprio programador entender o código.
 
